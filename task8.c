@@ -1,3 +1,5 @@
+int power(int num, int exp); // task7 power function
+
 int reverse_num(int num)
 {
 	int num_copy = num;
@@ -12,7 +14,7 @@ int reverse_num(int num)
 
 	while (num != 0)
 	{
-		res += num % 10 * power(10, digits_size); // task7 power function
+		res += num % 10 * power(10, digits_size);
 		num /= 10;
 		--digits_size;
 	}
